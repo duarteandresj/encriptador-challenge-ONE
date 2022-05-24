@@ -1,13 +1,19 @@
-.titulo-centrado{
-    text-align: center;
-}
 header{
     background-color: aliceblue;
 }
-header img{
-    display: inline-block;
+.titulo-principal  {
+    text-align: center;
 }
-
-div #imagen-munieco{
+.entrada-texto{
+    background: yellow;
+}
+.salida-texto{
+    background: red;
+}
+#imagen-munieco{
     background-color: #BBBBBB;
+    display: block;
+}
+footer{
+    background-color: aqua;
 }
