@@ -11,12 +11,11 @@
   <body>
     <header>
       <img id="imagen-logo" src="img/logo.png" alt="Logo de alura" />
-      <h1 clas="titulo-principal">Encriptador de Texto</h1>
+      <h1 class="titulo-principal">Encriptador de Texto</h1>
     </header>
     <main>
       <section class="entrada-texto">
         <textarea
-          name="textarea-encriptar"
           id="texto-de-entrada"
           cols="30"
           rows="10"
@@ -24,17 +23,17 @@
         ></textarea>
         <div>
           <button id="boton-encriptar">Encriptar</button>
-          <button id="boton Desencriptar" >Desencriptar</button>
+          <button id="boton-desencriptar" >Desencriptar</button>
         </div>
       </section>
 
       <section class="salida-texto">
         <img id="imagen-munieco" src="img/muñeco.png" alt="Buscador de texto" />
         <textarea
-          name="texto-desencriptado"
-          id=""
+          id="texto-de-salida"
           cols="30"
           rows="10"
+          class="invisible"
         ></textarea>
       </section>
     </main>

@@ -12,8 +12,10 @@ header{
 }
 #imagen-munieco{
     background-color: #AAA;
-    display: block;
 }
 footer{
     background-color:#FF91AF;
+}
+.invisible{
+    display: none;
 }
