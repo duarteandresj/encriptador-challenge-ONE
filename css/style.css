@@ -8,12 +8,12 @@ header{
     background: yellow;
 }
 .salida-texto{
-    background: red;
+    background: #CCC;
 }
 #imagen-munieco{
-    background-color: #BBBBBB;
+    background-color: #AAA;
     display: block;
 }
 footer{
-    background-color: aqua;
+    background-color:#FF91AF;
 }
