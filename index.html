@@ -11,48 +11,53 @@
   <body>
     <header>
       <img id="imagen-logo" src="img/logo.png" alt="Logo de alura" />
-      <h1 class="titulo-principal">Encriptador de Texto</h1>
+      <h1 class="titulo-principal">Encriptador de texto-ONE</h1>
     </header>
     <main>
       <section class="entrada-texto">
         <textarea
           id="texto-de-entrada"
-          cols="30"
-          rows="10"
-          placeholder="ingrese  texto"
+          placeholder="Ingrese texto a encriptar/desencriptar"
+          pattern="[a-z]{1,15}"
+          autofocus
         ></textarea>
-        <div>
+        <p class="advertencia"> Solamente textos sin acentos y en minuscula</p>
+        <div class="espacio-de-botones">
           <button id="boton-encriptar">Encriptar</button>
-          <button id="boton-desencriptar" >Desencriptar</button>
+          <button id="boton-desencriptar">Desencriptar</button>
         </div>
       </section>
 
       <section class="salida-texto">
-        <img id="imagen-munieco" src="img/muñeco.png" alt="Buscador de texto" />
-        <textarea
-          id="texto-de-salida"
-          cols="30"
-          rows="10"
-          class="invisible"
-        ></textarea>
+        <div id="buscador-de-texto">
+          <img src="img/muñeco.png" alt="Buscador de texto" />
+          <h2>Ningun mensaje fue encontrado</h2>
+          <p>Esperando mensaje secreto</p>
+        </div>
+        <textarea id="texto-de-salida" class="invisible" readonly></textarea>
+        <div class="espacio-de-botones">
+          <button id="boton-copiar" class="invisible">Copiar</button>
+        </div>
       </section>
     </main>
     <footer>
-      <p>Duarte Andres</p>
-      <ul>
-        <li>
-          <img src="img/linkedin.png" alt="Linkedin" /><a
-            href="https://www.linkedin.com/in/andres-duarte-8896b1197/"
-            >LinkedIn</a
-          >
-        </li>
-        <li>
-          <img src="img/github.png" alt="GitHub" /><a
-            href="https://github.com/duarteandresj"
-            >GitHub</a
-          >
-        </li>
-      </ul>
+      <div class="contacto">
+        <p>Duarte Andres</p>
+        <ul>
+          <li>
+            <img src="img/linkedin.png" alt="Linkedin" /><a
+              href="https://www.linkedin.com/in/andres-duarte-8896b1197/"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <img src="img/github.png" alt="GitHub" /><a
+              href="https://github.com/duarteandresj"
+              >GitHub</a
+            >
+          </li>
+        </ul>
+      </div>
       <div class="creditos">
         <a
           href="https://www.flaticon.es/iconos-gratis/github"
@@ -62,5 +67,7 @@
       </div>
     </footer>
     <script src="js/encriptar.js"></script>
+    <script src="js/desencriptar.js"></script>
+    <script src="js/copiar.js"></script>
   </body>
 </html>

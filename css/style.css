@@ -1,21 +1,114 @@
-header{
-    background-color: aliceblue;
+header {
+  width: 100%;
+  background-color: #f3f5fc;
+  padding: 20px 0;
 }
-.titulo-principal  {
-    text-align: center;
+header img {
+  width: 2%;
+  padding: 0 1.5%;
+  vertical-align: bottom;
 }
-.entrada-texto{
-    background: yellow;
+.titulo-principal {
+  width: 90%;
+  text-align: center;
+  font-size: 2.5em;
+  display: inline-block;
+  vertical-align: top;
+  font-weight: bold;
 }
-.salida-texto{
-    background: #CCC;
+main {
+  background: linear-gradient(#f3f5fc, #626262);
 }
-#imagen-munieco{
-    background-color: #AAA;
+
+section {
+  height: 40vw;
+  display: inline-block;
+  text-align: center;
+  margin: 0 20px;
 }
-footer{
-    background-color:#FF91AF;
+.entrada-texto {
+  width: 60%;
+  vertical-align: top;
 }
-.invisible{
-    display: none;
+.advertencia::before{
+  content:"⚠";
+}
+.advertencia{
+  margin: 10% 0 0 10%;
+  padding-bottom:15px ;
+  text-align: left;
+  color:#d9ff00; 
+  font-size: 15px;
+}
+#texto-de-entrada,
+#texto-de-salida {
+  background: rgba(242, 242, 242, 0);
+  border-radius: 15px;
+  width: 80%;
+  height: 50%;
+  padding: 0 1.5%;
+  border: 0;
+  font-weight: bold;
+  color: #0004f0;
+}
+.salida-texto {
+  width: 30%;
+}
+.salida-texto img {
+  width: 50%;
+}
+.salida-texto h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.salida-texto p {
+  font-size: 1em;
+}
+.espacio-de-botones button {
+  color: black;
+  background: blue;
+  border-radius: 10px;
+  padding: 5px 15px;
+  margin: 0 10%;
+}
+button:hover {
+  color: white;
+  background: red;
+}
+#boton-encriptar {
+  color: white;
+  background: #bbbbbb;
+}
+#boton-encriptar:hover {
+  color: white;
+  background: red;
+}
+
+footer {
+  text-align: center;
+  background: #636363;
+  color: white;
+  font-size: medium;
+  padding-bottom: 15px;
+}
+.contacto {
+  color: #bbdddd;
+  width: 60%;
+  display: inline-block;
+}
+.contacto img {
+  width: 14px;
+  padding: 0 2%;
+ 
+}
+
+.creditos {
+  display: inline-block;
+  width: 15%;
+  font-size: 12px;
+  vertical-align: top;
+}
+
+.invisible {
+  display: none;
 }
