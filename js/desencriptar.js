@@ -1,6 +1,6 @@
 
 $botonDesencriptar.addEventListener("click", function () {
-    if ($textoDeEntrada.value.length > 0) {
+    if ($textoDeEntrada.value.length > 0&& textoEsValido) {
       desencriptar($textoDeEntrada.value);
       $divSinTexto.classList.add("invisible");
       $textareaSalida.classList.remove("invisible");

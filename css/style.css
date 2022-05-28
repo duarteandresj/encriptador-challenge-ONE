@@ -26,6 +26,18 @@ section {
   text-align: center;
   margin: 0 20px;
 }
+span{
+  color:red;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: small;
+  padding: 5px;
+  display: inline-block;
+}
+span::before{
+  content:"\1F6AB";
+  margin-right: 10px;
+}
 .entrada-texto {
   width: 60%;
   vertical-align: top;
@@ -46,7 +58,7 @@ section {
   border-radius: 15px;
   width: 80%;
   height: 50%;
-  padding: 0 1.5%;
+  padding: 1.5% 1.5%;
   border: 0;
   font-weight: bold;
   color: #0004f0;
@@ -74,6 +86,9 @@ section {
 button:hover {
   color: white;
   background: red;
+  transform: scale(1.2);
+  cursor: pointer;
+  
 }
 #boton-encriptar {
   color: white;
@@ -87,27 +102,42 @@ button:hover {
 footer {
   text-align: center;
   background: #636363;
-  color: white;
-  font-size: medium;
-  padding-bottom: 15px;
+  color: #f3f5fc;
+  font-size: 14px;
+ 
 }
 .contacto {
-  color: #bbdddd;
   width: 60%;
   display: inline-block;
 }
+.contacto p{
+  font-style: italic;
+  margin: 0 0 0 15px;
+}
 .contacto img {
-  width: 14px;
-  padding: 0 2%;
+  width: 15px;
+  padding: 0 1px;
  
 }
+.contacto ul{
+  margin: 15px 0;
+}
 
+.contacto li{
+  display: inline;
+  padding-left: 15px;
+}
+a{
+  color: #f3f5fc;
+  text-decoration: none;
+}
 .creditos {
   display: inline-block;
   width: 15%;
   font-size: 12px;
   vertical-align: top;
 }
+
 
 .invisible {
   display: none;

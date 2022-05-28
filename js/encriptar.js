@@ -8,16 +8,13 @@ const $botonCopiar=document.querySelector("#boton-copiar");
 
 
 $botonEncriptar.addEventListener("click", function () {
-  validaTexto($textoDeEntrada.value);
-  if ($textoDeEntrada.value.length > 0&&testoEsValido) {
+  if ($textoDeEntrada.value.length > 0&&textoEsValido) {
     encriptar($textoDeEntrada.value);
     $divSinTexto.classList.add("invisible");
     $textareaSalida.classList.remove("invisible");
     $botonCopiar.classList.remove("invisible");
     $textoDeEntrada.value = "";
-  } else if(!testoEsValido){
-alert("Texto invalido");
-  }  
+  } 
   else {
     $botonCopiar.classList.add("invisible");
     $textareaSalida.classList.add("invisible");
