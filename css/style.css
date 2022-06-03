@@ -1,17 +1,17 @@
 header {
   width: 100%;
   background-color: #f3f5fc;
-  padding: 20px 0;
+  padding:2% 0;
 }
 header img {
-  width: 2%;
+  width: 20px;
   padding: 0 1.5%;
   vertical-align: bottom;
 }
 .titulo-principal {
   width: 90%;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 28px;
   display: inline-block;
   vertical-align: top;
   font-weight: bold;
@@ -21,50 +21,50 @@ main {
 }
 
 section {
-  height: 40vw;
+  height: 80vh;
   display: inline-block;
   text-align: center;
-  margin: 0 20px;
+  margin: 0 1%;
 }
-span{
-  color:red;
+span {
+  color: red;
   font-weight: bold;
   text-transform: uppercase;
   font-size: small;
   padding: 5px;
   display: inline-block;
 }
-span::before{
-  content:"\1F6AB";
+span::before {
+  content: "\1F6AB";
   margin-right: 10px;
 }
 .entrada-texto {
-  width: 60%;
+  width: 50vw;
   vertical-align: top;
 }
-.advertencia::before{
-  content:"⚠";
+.advertencia::before {
+  content: "⚠";
 }
-.advertencia{
-  margin: 10% 0 0 10%;
-  padding-bottom:15px ;
+.advertencia {
+  margin: 0 0 0 10%;
+  padding-bottom: 15px;
   text-align: left;
-  color:#d9ff00; 
+  color: #d9ff00;
   font-size: 15px;
 }
-#texto-de-entrada,
-#texto-de-salida {
+#texto-de-entrada,#texto-de-salida
+ {
   background: rgba(242, 242, 242, 0);
-  border-radius: 15px;
-  width: 80%;
-  height: 50%;
+  border-radius: 10px;
+  width: 90%;
+  height: 70%;
   padding: 1.5% 1.5%;
   border: 0;
   font-weight: bold;
   color: #0004f0;
 }
 .salida-texto {
-  width: 30%;
+  width: 30vw;
 }
 .salida-texto img {
   width: 50%;
@@ -88,7 +88,6 @@ button:hover {
   background: red;
   transform: scale(1.2);
   cursor: pointer;
-  
 }
 #boton-encriptar {
   color: white;
@@ -104,41 +103,139 @@ footer {
   background: #636363;
   color: #f3f5fc;
   font-size: 14px;
- 
+  padding: 1% 0;
 }
 .contacto {
-  width: 60%;
+  width: 60vw;
   display: inline-block;
 }
-.contacto p{
+.contacto p {
   font-style: italic;
   margin: 0 0 0 15px;
 }
 .contacto img {
   width: 15px;
   padding: 0 1px;
- 
 }
-.contacto ul{
+.contacto ul {
   margin: 15px 0;
 }
 
-.contacto li{
+.contacto li {
   display: inline;
   padding-left: 15px;
 }
-a{
+a {
   color: #f3f5fc;
   text-decoration: none;
 }
 .creditos {
   display: inline-block;
-  width: 15%;
+  width: 15vw;
   font-size: 12px;
   vertical-align: top;
 }
 
-
 .invisible {
   display: none;
 }
+
+/*css para pantallas medianas*/
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    .entrada-texto {
+      width: 90%;
+      height: 40vh;
+      padding: 1%;
+      margin: 0 auto;
+    }   
+    #texto-de-entrada,
+#texto-de-salida {
+ width: 90%;
+height: 50%;
+}
+    .advertencia,.creditos{
+      font-size: 10px;
+    }
+    .advertencia {
+      margin: 1%;
+      text-align: center;
+      padding-bottom: 8px;
+    }
+    .espacio-de-botones{
+      margin: 0%;
+    }
+    .espacio-de-botones button {
+      border-radius: 5px;
+    }
+    .salida-texto {
+      width: 90%;
+      height: 20vh;
+      padding: 1%;
+      margin: 0 auto;
+    }
+    .salida-texto h2 {
+      font-size: 12px;
+    }
+    .salida-texto p,
+    footer {
+      font-size: 10px;
+    }
+    .salida-texto img {
+      display: none;
+    }
+    .contacto img {
+      width: 10px;
+    }
+}
+
+/*Css para pantallas chicas*/
+@media screen and (max-width: 376px) {
+  *{
+    text-align: center;
+  }
+  .entrada-texto {
+    width: 90%;
+    height: 50vh;
+    margin: 0 auto;
+  }
+  #texto-de-entrada,
+  #texto-de-salida {
+   width: 90%;
+  height: 40%;
+  }
+  .advertencia {
+    margin: 1%;
+    text-align: center;
+    padding-bottom: 8px;
+  }
+  .advertencia,.creditos{
+    font-size: 10px;
+  }
+  .salida-texto {
+    width: 90%;
+    height: 20vh;
+  }
+  .salida-texto h2 {
+    font-size: 14px;
+  }
+  .salida-texto p,
+  footer {
+    font-size: 10px;
+  }
+  .salida-texto img {
+    display: none;
+  }
+  .espacio-de-botones {
+    padding: 0 auto;}
+  .espacio-de-botones button {
+    padding: 0px 10px;
+    margin: 15px auto;
+  }
+  #boton-encriptar,
+  #boton-desencriptar {
+    display: block;
+  }
+  .contacto img {
+    width: 10px;
+  }
+  }
