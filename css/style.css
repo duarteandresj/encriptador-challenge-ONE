@@ -1,7 +1,7 @@
 header {
   width: 100%;
   background-color: #f3f5fc;
-  padding: 20px 0;
+  padding:2% 0;
 }
 header img {
   width: 20px;
@@ -24,7 +24,7 @@ section {
   height: 80vh;
   display: inline-block;
   text-align: center;
-  margin: 0 20px;
+  margin: 0 1%;
 }
 span {
   color: red;
@@ -39,25 +39,25 @@ span::before {
   margin-right: 10px;
 }
 .entrada-texto {
-  width: 60vw;
+  width: 50vw;
   vertical-align: top;
 }
 .advertencia::before {
   content: "⚠";
 }
 .advertencia {
-  margin: 10% 0 0 10%;
+  margin: 0 0 0 10%;
   padding-bottom: 15px;
   text-align: left;
   color: #d9ff00;
   font-size: 15px;
 }
-#texto-de-entrada,
-#texto-de-salida {
+#texto-de-entrada,#texto-de-salida
+ {
   background: rgba(242, 242, 242, 0);
   border-radius: 10px;
-  width: 80%;
-  height: 50%;
+  width: 90%;
+  height: 70%;
   padding: 1.5% 1.5%;
   border: 0;
   font-weight: bold;
@@ -103,6 +103,7 @@ footer {
   background: #636363;
   color: #f3f5fc;
   font-size: 14px;
+  padding: 1% 0;
 }
 .contacto {
   width: 60vw;
@@ -139,27 +140,83 @@ a {
   display: none;
 }
 
+/*css para pantallas medianas*/
 @media screen and (min-width: 376px) and (max-width: 768px) {
-    *{background-color: black; }
+    .entrada-texto {
+      width: 90%;
+      height: 40vh;
+      padding: 1%;
+      margin: 0 auto;
+    }   
+    #texto-de-entrada,
+#texto-de-salida {
+ width: 90%;
+height: 50%;
 }
-@media screen and (max-width: 375px) {
+    .advertencia,.creditos{
+      font-size: 10px;
+    }
+    .advertencia {
+      margin: 1%;
+      text-align: center;
+      padding-bottom: 8px;
+    }
+    .espacio-de-botones{
+      margin: 0%;
+    }
+    .espacio-de-botones button {
+      border-radius: 5px;
+    }
+    .salida-texto {
+      width: 90%;
+      height: 20vh;
+      padding: 1%;
+      margin: 0 auto;
+    }
+    .salida-texto h2 {
+      font-size: 12px;
+    }
+    .salida-texto p,
+    footer {
+      font-size: 10px;
+    }
+    .salida-texto img {
+      display: none;
+    }
+    .contacto img {
+      width: 10px;
+    }
+}
+
+/*Css para pantallas chicas*/
+@media screen and (max-width: 376px) {
+  *{
+    text-align: center;
+  }
   .entrada-texto {
     width: 90%;
-    height: 60vh;
+    height: 50vh;
+    margin: 0 auto;
+  }
+  #texto-de-entrada,
+  #texto-de-salida {
+   width: 90%;
+  height: 40%;
   }
   .advertencia {
-    margin: 10% 0;
+    margin: 1%;
+    text-align: center;
     padding-bottom: 8px;
   }
   .advertencia,.creditos{
-    font-size: 8px;
+    font-size: 10px;
   }
   .salida-texto {
     width: 90%;
     height: 20vh;
   }
   .salida-texto h2 {
-    font-size: 12px;
+    font-size: 14px;
   }
   .salida-texto p,
   footer {
